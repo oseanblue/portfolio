@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Jumbotron Section -->
+<section class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 style="color: #6c4b26; "class="display-4" id="name">ARU-SOFTWARE-ENGINEER</h1>
+    <p class="lead">Web Developer | Designer | Problem Solver</p>
+  
+  </div>
+</section>
+
+<div class="container text-center mt-4">
+  <button class="transparent-button" onclick="toggleContent('about-section')">About Me</button>
+  <button class="transparent-button" onclick="toggleContent('what-offer-section')">What I Offer</button>
+  <button class="transparent-button" onclick="toggleContent('contact-section')">Contact</button>
+</div>
+
+
+
+<section class="container content" id="about-section">
+  <h2>About Me</h2>
+  <p class="custom-font"  id="about-content">😊 As a highly skilled web developer with a focus on Laravel, React.js, Node.js, and Django, I am committed to delivering top-notch web solutions that elevate your business's online presence. With extensive experience in crafting stunning websites, I bring creativity and functionality together to create a seamless user experience that keeps your customers engaged.
+   
+    <br><br> 🎯Currently, I am thriving as a freelance web developer, assisting small businesses in establishing their online presence. As a freelancer, I understand the unique challenges faced by small businesses, and I am dedicated to tailoring web solutions that meet your specific needs and goals. Whether it's an e-commerce platform, a portfolio website, or a dynamic web application, I have the expertise to bring your vision to life and enhance your brand's online identity.
+    
+    <br><br>🏆Moreover, my role as a part-time subject matter expert in computer science demonstrates my commitment to education and sharing knowledge. This ensures that the websites I create are built on solid foundations, optimized for performance, and equipped with cutting-edge technologies to keep your business ahead of the competition.
+    
+    <br><br> 🌱Now, with my foray into data science and machine learning, I am excited to take your web presence to the next level. By integrating data-driven insights into your website, you can make informed decisions, gain valuable customer insights, and drive business growth.
+    <span id="read-more-link" class="read-more-link" onclick="toggleReadMore()">Read More</span>
+    </p>
+    
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- What I Offer Section -->
+<section  class="container content" id="what-offer-section">
+  <h2 class="text-center">What I Offer</h2>
+  <div class="card-container">
+    <div class="card" onclick="toggleContent('content1')">
+      <div class="card-title">Affordable Pricing</div>
+      <div class="content" id="content1">
+        <p>As a freelancer, I offer cost-effective solutions without compromising on quality. I believe that exceptional web development should be accessible to businesses of all sizes.</p>
+      </div>
+    </div>
+    <!-- Add the remaining cards here -->
+    <div class="card" onclick="toggleContent('content2')">
+      <div class="card-title">Proven Track Record</div>
+      <div class="content" id="content2">
+          <p>My portfolio boasts a diverse range of successful projects, and my satisfied clients can vouch for the quality of my work. I let my results speak for themselves.</p>
+      </div>
+  </div>
+
+  <div class="card" onclick="toggleContent('content3')">
+      <div class="card-title">Continuous Support</div>
+      <div class="content" id="content3">
+          <p>My commitment to your success extends beyond project completion. I provide ongoing support and assistance, ensuring your website continues to perform optimally.</p>
+      </div>
+  </div>
+
+  <div class="card" onclick="toggleContent('content4')">
+      <div class="card-title">Innovation and Creativity</div>
+      <div class="content" id="content4">
+          <p>I thrive on pushing the boundaries of web development. Expect innovative and creative solutions that set your website apart from the competition and leave a lasting impression on your audience.</p>
+      </div>
+  </div>
+
+  <div class="card" onclick="toggleContent('content5')">
+      <div class="card-title">Data-Driven Insights</div>
+      <div class="content" id="content5">
+          <p>By incorporating data science and machine learning, I offer you the power of data-driven insights. Uncover valuable information about your customers, market trends, and performance metrics to make informed decisions.</p>
+      </div>
+  </div>
+
+  <div class="card" onclick="toggleContent('content6')">
+      <div class="card-title">Long-Term Partnership</div>
+      <div class="content" id="content6">
+          <p>My goal is to establish a long-term partnership with you. I am invested in your growth and success, and I look forward to being your go-to web development expert for all your future needs.</p>
+      </div>
+  </div>
+
+  <div class="card" onclick="toggleContent('content7')">
+      <div class="card-title">Dedicated Professional</div>
+      <div class="content" id="content7">
+          <p>By choosing me as your web development partner, you gain a dedicated professional who is passionate about bringing your vision to life. Let's collaborate to create a remarkable online presence that drives conversions, engages your audience, and propels your business towards a prosperous future.</p>
+      </div>
+  </div>
+</div>
+  </div>
+</section>
+
+ <!-- Contact Section (Initially hidden) -->
+ <section class="content text-center" id="contact-section">
+  <h2>My Contact Details</h2>
+  <p>
+    <strong style="color: #6c4b26;">Email:</strong> dypriya101@gmail.com<br>
+    <strong style="color: #6c4b26;">Phone:</strong> +91-882278366<br>
+    <strong style="color: #6c4b26;">Location:</strong> Delhi, India
+  </p>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer text-center mt-4">
+  <p>&copy; 2023 ARU :) -- All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://www.youtube.com/channel/UCfufFfkEkuv-t3TxPUjTbyg" target="_blank" class="youtube-link">YouTube</a>
+    <a href="https://www.linkedin.com/in/arunima-b-08040a251/" target="_blank" class="linkedin-link">LinkedIn</a>
+    <a href="mailto:dypriya101@gmail.com" target="_blank" class="gmail-link">Gmail</a>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JavaScript for toggleContent function -->
+<script src="script.js">
+ 
+</script>
+</body>
+</html>
